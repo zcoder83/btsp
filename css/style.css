@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  color: #05161a;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+.navbar {
+  padding: 14px 0;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.navbar .navbar-brand {
+  display: inline-block;
+  width: 176px;
+}
+
+.navbar .navbar-brand img {
+  display: inline-block;
+  width: 100%;
+}
+
+.navbar .navbar-collapse {
+  margin-left: 26%;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+  display: inline-block;
+  font-size: 18px;
+  color: #05161a;
+  font-family: "TsukuARdGothicStd-M", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin-top: 100px;
+}
+/*# sourceMappingURL=style.css.map */

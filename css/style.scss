@@ -1,0 +1,40 @@
+body {
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+    color: #05161a;
+}
+header {
+    background-color: #ffffff;
+}
+.navbar {
+    padding: 14px 0;
+    max-width: 1280px;
+    margin: auto;
+    .navbar-brand {
+        display: inline-block;
+        width: 176px;
+        img {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    .navbar-collapse {
+        margin-left: 26%;
+        .navbar-nav {
+    
+            .nav-item {
+                display: inline-block;
+                font-size: 18px;
+                color: #05161a;
+                font-family: "TsukuARdGothicStd-M", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+            }
+            .nav-item:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+.main {
+    margin-top: 100px;
+    
+}
