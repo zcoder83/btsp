@@ -7,9 +7,53 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  href="css/lightslider.css"/>
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+  <script src="myscript.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light row">
             <a class="navbar-brand col-xm-3" href="#"><img src="./img/logo.png" alt="logo"></a>
@@ -31,15 +75,70 @@
     <div class="main">
         <div class="text-center w-25 p-3">
             <h2><span>相続</span>した人のための<span>空家売買</span>専門サービス</h2>
+            <div class="text-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio voluptatem minima quibusdam dolorem sequi rem aliquam cupiditate. Veritatis officiis fugiat alias incidunt illo mollitia tenetur! Accusamus, suscipit aspernatur tempore sed quisquam totam quos nemo animi eaque est ad delectus. Itaque quas magni facilis doloremque minus. Nam, quod mollitia alias ipsa aspernatur neque illum, harum sit soluta cupiditate quas ut ex corrupti repellat accusantium impedit delectus possimus dignissimos voluptate sunt quam! Placeat dicta veritatis dolore nisi? Debitis a rem velit reiciendis. Quos cumque blanditiis vel nobis natus dolorum, optio architecto fuga laudantium quidem, non illum, ex nemo voluptatem rem dolorem.</div>
+            <div class="text-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio voluptatem minima quibusdam dolorem sequi rem aliquam cupiditate. Veritatis officiis fugiat alias incidunt illo mollitia tenetur! Accusamus, suscipit aspernatur tempore sed quisquam totam quos nemo animi eaque est ad delectus. Itaque quas magni facilis doloremque minus. Nam, quod mollitia alias ipsa aspernatur neque illum, harum sit soluta cupiditate quas ut ex corrupti repellat accusantium impedit delectus possimus dignissimos voluptate sunt quam! Placeat dicta veritatis dolore nisi? Debitis a rem velit reiciendis. Quos cumque blanditiis vel nobis natus dolorum, optio architecto fuga laudantium quidem, non illum, ex nemo voluptatem rem dolorem.</div>
+            <div class="text-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio voluptatem minima quibusdam dolorem sequi rem aliquam cupiditate. Veritatis officiis fugiat alias incidunt illo mollitia tenetur! Accusamus, suscipit aspernatur tempore sed quisquam totam quos nemo animi eaque est ad delectus. Itaque quas magni facilis doloremque minus. Nam, quod mollitia alias ipsa aspernatur neque illum, harum sit soluta cupiditate quas ut ex corrupti repellat accusantium impedit delectus possimus dignissimos voluptate sunt quam! Placeat dicta veritatis dolore nisi? Debitis a rem velit reiciendis. Quos cumque blanditiis vel nobis natus dolorum, optio architecto fuga laudantium quidem, non illum, ex nemo voluptatem rem dolorem.</div>
+        </div>
+ 
+    <div class="demo">
+        <div class="item">            
+                <div class="clearfix" style="max-width:474px;">
+                    <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                        <li data-thumb="img/thumb/cS-1.jpg"> 
+                            <img src="img/cS-1.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-2.jpg"> 
+                            <img src="img/cS-2.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-3.jpg"> 
+                            <img src="img/cS-3.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-4.jpg"> 
+                            <img src="img/cS-4.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-5.jpg"> 
+                            <img src="img/cS-5.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-6.jpg"> 
+                            <img src="img/cS-6.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-7.jpg"> 
+                            <img src="img/cS-7.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-8.jpg"> 
+                            <img src="img/cS-8.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-9.jpg"> 
+                            <img src="img/cS-9.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-10.jpg"> 
+                            <img src="img/cS-10.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-11.jpg"> 
+                            <img src="img/cS-11.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-12.jpg"> 
+                            <img src="img/cS-12.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-13.jpg"> 
+                            <img src="img/cS-13.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-14.jpg"> 
+                            <img src="img/cS-14.jpg" />
+                                </li>
+                        <li data-thumb="img/thumb/cS-15.jpg"> 
+                            <img src="img/cS-15.jpg" />
+                                </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
-
-
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
